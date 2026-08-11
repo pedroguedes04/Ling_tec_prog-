@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+
+// calculo da area do circulo - aula 11/08/26
+
+int main(int argc, char *argv[]) {
+    float raio, area;
+    printf ("Insira o valor do raio do circulo\n");
+	scanf ("%f", &raio); 
+	
+    area = M_PI*(raio*raio);
+	
+	printf ("A area do circulo de raio %f = %f\n", raio, area);
+	
+	//calculo da area do trapezio no mesmo programa
+	
+	float base_maior, base_menor, altura;
+	printf("Insira o valor da base maior do trapezio\n");
+	scanf ("%f", &base_maior);
+	
+	printf("Insira o valor da base menor do trapezio\n");
+	scanf ("%f", &base_menor);
+	
+    printf("Insira o valor da altura do trapezio\n");
+    scanf("%f", &altura);
+    
+    area = ((base_maior + base_menor)*altura)/2;
+    printf ("A area do trapezio de base maior %f, base menor %f e altura %f = %f\n", base_maior, base_menor, altura, area);
+	return 0;
+}
