@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+// calculo de comparação de maior numero entre 3 opções
+
+int main(int argc, char *argv[]) {
+	int a,b,c, maiorTemp, maior;
+	
+	printf("Insira tres valores para identificar o maior: ");
+	scanf("%d %d %d", &a, &b, &c);
+	
+	maiorTemp = ((a+b+abs(a-b))/2);
+	maior = ((maiorTemp+c+abs(maiorTemp-c))/2);
+	printf("O maior numero entre |%d|%d|%d| = %d", a,b,c, maior);
+	return 0;
+}
