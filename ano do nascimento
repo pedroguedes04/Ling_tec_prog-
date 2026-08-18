@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// calculo do ano do nascimento com base na idade e no corrente ano
+
+int main(int argc, char *argv[]){
+	int idade, ano_atual, ano_do_nascimento;
+	
+	printf("Insira sua idade: ");
+	scanf("%d", &idade);
+
+    printf("Insira o ano atual: ");
+    scanf("%d" &ano_atual;)
+    
+	printf("O ano do seu nascimento = ");
+	scanf("%d", &ano_do_nascimento);
+	
+	return 0;
+}
