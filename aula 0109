@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//programa pra identificar se é vogal ou consoante
+
+int main(int argc, char *argv[]){
+	
+	char letra;
+	printf("Insira uma letra ");
+	scanf("%c", &letra);
+	
+	if(letra == 'a'|| letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
+		if(letra == 'a' || letra == 'o'){
+			printf("aoba");
+		}
+if(letra == 'i' || letra == 'u'){
+	printf("LA ELE");
+}
+}else{
+printf("67 ");
+}	
+
+switch(letra){
+	case 'a':
+		printf("a de AMOR");
+		break;
+		case 'b':
+			printf("b de baixinho");
+			break;
+			case 'c':
+				printf("c de coracao");
+				break;
+				case 'd':
+					printf("d de docinho");
+					break;
+}
+	return 0;
+}
