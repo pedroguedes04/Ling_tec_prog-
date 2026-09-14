@@ -14,25 +14,23 @@ int main() {
     pvp = vp / (preco * 100);
 
     printf("\nP/VP calculado: %.2f\n", pvp);
+    printf("\nRecomendacoes:\n");
 
-    // verifica a tabela de recomendacao, na ordem de cima pra baixo
+    // cada if e independente - o cliente pode se encaixar em mais de uma
     if (preco > 10.00 && pvp > 0.5) {
-        printf("Recomendacao: OTIMA / COMPRA\n");
+        printf("- OTIMA / COMPRA\n");
     }
-    else if (preco < 4.00 && pvp < 1.0) {
-        printf("Recomendacao: REGULAR / ESPERE\n");
+    if (preco < 4.00 && pvp < 1.0) {
+        printf("- REGULAR / ESPERE\n");
     }
-    else if (preco > 5.00 && pvp < 1.2) {
-        printf("Recomendacao: RUIM / NAO COMPRE\n");
+    if (preco > 5.00 && pvp < 1.2) {
+        printf("- RUIM / NAO COMPRE\n");
     }
-    else if (preco < 10.00 && pvp > 0.3) {
-        printf("Recomendacao: OPORTUNIDADE\n");
+    if (preco < 10.00 && pvp > 0.3) {
+        printf("- OPORTUNIDADE\n");
     }
-    else if (preco > 4.00 && pvp < 0.7) {
-        printf("Recomendacao: ATENCAO\n");
-    }
-    else {
-        printf("Recomendacao: SEM CLASSIFICACAO DEFINIDA\n");
+    if (preco > 4.00 && pvp < 0.7) {
+        printf("- ATENCAO\n");
     }
 
     return 0;
