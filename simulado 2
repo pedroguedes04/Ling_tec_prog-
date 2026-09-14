@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    float preco, vp, pvp;
+
+    // pede os dados de entrada
+    printf("Digite o preco da acao (R$): ");
+    scanf("%f", &preco);
+
+    printf("Digite o valor patrimonial (VP): ");
+    scanf("%f", &vp);
+
+    // calcula o indicador P/VP conforme a formula do quadro
+    pvp = vp / (preco * 100);
+
+    printf("\nP/VP calculado: %.2f\n", pvp);
+
+    // verifica a tabela de recomendacao, na ordem de cima pra baixo
+    if (preco > 10.00 && pvp > 0.5) {
+        printf("Recomendacao: OTIMA / COMPRA\n");
+    }
+    else if (preco < 4.00 && pvp < 1.0) {
+        printf("Recomendacao: REGULAR / ESPERE\n");
+    }
+    else if (preco > 5.00 && pvp < 1.2) {
+        printf("Recomendacao: RUIM / NAO COMPRE\n");
+    }
+    else if (preco < 10.00 && pvp > 0.3) {
+        printf("Recomendacao: OPORTUNIDADE\n");
+    }
+    else if (preco > 4.00 && pvp < 0.7) {
+        printf("Recomendacao: ATENCAO\n");
+    }
+    else {
+        printf("Recomendacao: SEM CLASSIFICACAO DEFINIDA\n");
+    }
+
+    return 0;
+}
