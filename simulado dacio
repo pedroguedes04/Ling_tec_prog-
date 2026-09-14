@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    int a, b, c, d;
+    int a2, b2, c2, d2;
+
+    // pede os 4 numeros para o usuario
+    printf("Digite o valor de A: ");
+    scanf("%d", &a);
+
+    printf("Digite o valor de B: ");
+    scanf("%d", &b);
+
+    printf("Digite o valor de C: ");
+    scanf("%d", &c);
+
+    printf("Digite o valor de D: ");
+    scanf("%d", &d);
+
+    // faz a permutacao: B, D, A, C
+    a2 = b;
+    b2 = d;
+    c2 = a;
+    d2 = c;
+
+    // mostra os valores antes e depois
+    printf("\n");
+    printf("Antes da permutacao:\n");
+    printf("A = %d\n", a);
+    printf("B = %d\n", b);
+    printf("C = %d\n", c);
+    printf("D = %d\n", d);
+
+    printf("\n");
+    printf("Depois da permutacao:\n");
+    printf("A = %d\n", a2);
+    printf("B = %d\n", b2);
+    printf("C = %d\n", c2);
+    printf("D = %d\n", d2);
+
+    return 0;
+}
